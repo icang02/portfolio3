@@ -315,19 +315,19 @@ img {
 }
 /* akhir footer */
 
-/* RESPONSIVE BREAKPOINT */
-@media (max-width: 991px) {
+/* --------------------RESPONSIVE BREAKPOINT------------------- */
+@media (max-width: 768px) {
   header,
   header.sticky {
-    padding: 20px 50px;
+    padding: 5px 30px;
     z-index: 1000;
   }
   .menu {
     position: fixed;
-    top: 60px;
+    top: 50px;
     left: -100%;
     display: block;
-    padding: 60px 50px;
+    padding: 25px 50px;
     text-align: center;
     width: 100%;
     height: 100vh;
@@ -341,7 +341,7 @@ img {
   }
   header ul li a {
     color: #111;
-    font-size: 24px;
+    font-size: 20 px;
     margin: 10px;
   }
   .toggle {
@@ -364,10 +364,10 @@ img {
     filter: invert(1);
   }
   section {
-    padding: 100px 50px;
+    padding: 100px 30px;
   }
   .banner {
-    padding: 150px 50px 100px;
+    padding: 150px 30px 100px;
   }
   .banner h2 {
     font-size: 1.5em;
@@ -388,6 +388,7 @@ img {
   }
   .content {
     flex-direction: column;
+    align-items: center;
   }
   .w50 {
     margin-bottom: 20px;
@@ -411,12 +412,27 @@ img {
   .contactInfo {
     margin: 20px 0;
   }
+  .contactInfoBx .box .text p {
+    font-size: 0.8em;
+  }
+  .formBx form input[type="submit"] {
+    max-width: 80px;
+    padding: 5px 10px;
+    letter-spacing: 1px;
+  }
+  .formBx {
+    min-width: 70%;
+  }
+  .copyright p {
+    font-size: 0.8em;
+  }
 }
 
-@media (max-width: 600px) {
+/* ------------------------------------------------------------------- */
+@media (max-width: 576px) {
   header,
   header.sticky {
-    padding: 10px 20px;
+    padding: 5px 20px;
   }
   header ul li a {
     color: #111;
@@ -424,7 +440,22 @@ img {
     margin: 8px;
   }
   .banner {
-    padding: 150px 20px 100px;
+    padding: 200px 20px 100px;
+  }
+  .banner h2 {
+    font-size: 1.1em;
+    margin-bottom: 3px;
+  }
+  .banner h2 span {
+    font-size: 1.5em;
+  }
+  .banner h3 {
+    font-weight: 1.1em;
+    margin-bottom: 3px;
+  }
+  .btn {
+    padding: 8px 10px;
+    font-size: 0.8em;
   }
   .contentBx {
     padding-right: 0px;
@@ -441,5 +472,12 @@ img {
   .formBx form input[type="submit"] {
     max-width: 80px;
     padding: 5px 10px;
+    letter-spacing: 1px;
+  }
+  .formBx {
+    min-width: 90%;
+  }
+  .copyright p {
+    font-size: 0.8em;
   }
 }
